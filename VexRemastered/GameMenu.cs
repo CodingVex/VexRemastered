@@ -32,20 +32,55 @@ namespace VexRemastered
             Pen yellowPen = new Pen(Color.Yellow);
             #endregion
 
-            //Outer Polygon
+            
             for(int i = 20; i >= 0; i--)
             {
                 Point[] MenuPoints = { new Point(f1.getWidth() / 2, 0), new Point(f1.getWidth(), f1.getHeight() / 2), new Point(f1.getWidth() / 2, f1.getHeight()), new Point(0, f1.getHeight() / 2) };
-                if(i == 0)
+                Point[] vPoints = { new Point((f1.getWidth() / 100) * 30, f1.getHeight() / 3), new Point((f1.getWidth() / 100) * 35, f1.getHeight() / 2), new Point((f1.getWidth() / 100) * 40, f1.getHeight() / 3) };
+                Point[] ePoints = { new Point((f1.getWidth() / 100) * 45, f1.getHeight() / 3), new Point((f1.getWidth() / 100) * 55, f1.getHeight() / 3), new Point((f1.getWidth() / 100) * 45, f1.getHeight() / 3), new Point((f1.getWidth() / 100) * 45, f1.getHeight() / 2),
+                    new Point((f1.getWidth() / 100) * 55, f1.getHeight() / 2), new Point((f1.getWidth() / 100) * 45, f1.getHeight() / 2), new Point((f1.getWidth() / 100) * 45, (f1.getHeight() / 100) * 45), new Point((f1.getWidth() / 100) * 55, (f1.getHeight() / 100) * 45) };
+                Point[] xPoints = { new Point((f1.getWidth() / 100) * 60, f1.getHeight() / 3), new Point((f1.getWidth() / 100) * 65, (f1.getHeight() / 100) * 45), new Point((f1.getWidth() / 100) * 70, f1.getHeight() / 3), new Point((f1.getWidth() / 100) * 60, f1.getHeight() / 2),
+                    new Point((f1.getWidth() / 100) * 65, (f1.getHeight() / 100) * 45), new Point((f1.getWidth() / 100) * 70, f1.getHeight() / 2) };
+
+                if (i == 0)
+                {
+                    
                     g.DrawPolygon(bluePen, MenuPoints);
-                else if(i % 2 == 0)
+
+                    //V blue
+                    g.DrawLines(bluePen, vPoints);
+                    //E blue
+                    g.DrawLines(bluePen, ePoints);
+                    //X
+                    g.DrawLines(bluePen, xPoints);
+                }
+                else if (i % 2 == 0)
+                {
                     g.DrawPolygon(whitePen, MenuPoints);
-                    else if(i % 2 != 0)
-                        g.DrawPolygon(redPen, MenuPoints);
+
+                    //V white
+                    g.DrawLines(whitePen, vPoints);
+                    //E white
+                    g.DrawLines(whitePen, ePoints);
+                    //X
+                    g.DrawLines(whitePen, xPoints);
+                    
+                }
+                else if (i % 2 != 0)
+                {
+                    g.DrawPolygon(redPen, MenuPoints);
+
+                    //V red
+                    g.DrawLines(redPen, vPoints);
+                    //E red
+                    g.DrawLines(redPen, ePoints);
+                    //X
+                    g.DrawLines(redPen, xPoints);
+                }
                 Thread.Sleep(100);
             }
-            
-            //Vex
+
+           
             
             
         }
