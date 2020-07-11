@@ -1,0 +1,10 @@
+C:\Users\xxxof\Documents\VexRemastered\VexReRezzed\obj\Debug\VexReRezzed.csprojAssemblyReference.cache
+C:\Users\xxxof\Documents\VexRemastered\VexReRezzed\obj\Debug\VexReRezzed.Form1.resources
+C:\Users\xxxof\Documents\VexRemastered\VexReRezzed\obj\Debug\VexReRezzed.Properties.Resources.resources
+C:\Users\xxxof\Documents\VexRemastered\VexReRezzed\obj\Debug\VexReRezzed.csproj.GenerateResource.cache
+C:\Users\xxxof\Documents\VexRemastered\VexReRezzed\obj\Debug\VexReRezzed.csproj.CoreCompileInputs.cache
+C:\Users\xxxof\Documents\VexRemastered\VexReRezzed\bin\Debug\VexReRezzed.exe.config
+C:\Users\xxxof\Documents\VexRemastered\VexReRezzed\bin\Debug\VexReRezzed.exe
+C:\Users\xxxof\Documents\VexRemastered\VexReRezzed\bin\Debug\VexReRezzed.pdb
+C:\Users\xxxof\Documents\VexRemastered\VexReRezzed\obj\Debug\VexReRezzed.exe
+C:\Users\xxxof\Documents\VexRemastered\VexReRezzed\obj\Debug\VexReRezzed.pdb

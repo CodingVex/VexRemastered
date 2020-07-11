@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{71657C32-BCB4-46B9-BBA0-6B7CB9AD6D27}</ProjectGuid>
+    <ProjectGuid>{D91E4D48-A799-4EA5-B3C0-6ADFB8F9BD73}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>VexRemastered</RootNamespace>
-    <AssemblyName>VexRemastered</AssemblyName>
+    <RootNamespace>VexReRezzed</RootNamespace>
+    <AssemblyName>VexReRezzed</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,7 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Button.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,9 +53,10 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="GameMenu.cs" />
+    <Compile Include="Letters.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="VectorLetters.cs" />
+    <Compile Include="Star.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
